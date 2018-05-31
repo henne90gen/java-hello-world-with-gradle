@@ -17,6 +17,12 @@ apply plugin: 'application'
 
 mainClassName = 'hello.HelloWorld'
 
+sonarqube {
+    properties {
+        property 'sonar.projectName', 'Hello World in Java with Gradle'
+    }
+}
+
 // tag::repositories[]
 repositories {
     mavenCentral()
